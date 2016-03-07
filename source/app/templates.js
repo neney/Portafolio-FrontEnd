@@ -1,0 +1,4 @@
+angular.module("templates", []).run(["$templateCache", function($templateCache) {$templateCache.put("app/admin/lista.html","<div class=\"Header-admin\"></div>\n<a href=\"#/\">Ir a inicio</a>\n<h3> Hola  desde list admin</h3>\n<div ng-repeat=\"usuario in vm.usuarios\">\n    <li>{{usuario.nombre}}</li>\n</div>\n\n");
+$templateCache.put("app/inicio/inicio.html","<h2>Bienvenido Plantilla Angular Mangeltech</h2>\n<a href=\"#/admin\">Ir administración</a>\n<h4>Listado de Excelentes Lenguajes de Programación</h4>\n<div ng-repeat=\"lenguaje in vm.lenguajes\">\n    <li>{{ lenguaje.nombre }}</li>\n</div>");
+$templateCache.put("app/header/header.html","<header>\n   <h2>Hola desde el Header!</h2>\n</header>");
+$templateCache.put("app/footer/footer.html","<footer>\n    <h2>Hola desde el footer!</h2>\n</footer>");}]);
